@@ -44,7 +44,6 @@ import (
 	"github.com/ava-labs/libevm/triedb"
 	"github.com/ava-labs/subnet-evm/consensus/dummy"
 	"github.com/ava-labs/subnet-evm/params"
-	"github.com/ava-labs/subnet-evm/plugin/evm/customrawdb"
 	"github.com/stretchr/testify/require"
 )
 
@@ -507,7 +506,7 @@ func testLongReorgedDeepRepair(t *testing.T, snapshots bool) {
 }
 
 func testRepair(t *testing.T, tt *rewindTest, snapshots bool) {
-	for _, scheme := range []string{rawdb.HashScheme, rawdb.PathScheme, customrawdb.FirewoodScheme} {
+	for _, scheme := range []string{rawdb.HashScheme, rawdb.PathScheme} {
 		t.Run(scheme, func(t *testing.T) {
 			testRepairWithScheme(t, tt, snapshots, scheme)
 		})
@@ -518,10 +517,6 @@ func testRepairWithScheme(t *testing.T, tt *rewindTest, snapshots bool, scheme s
 	// It's hard to follow the test case, visualize the input
 	//log.Root().SetHandler(log.LvlFilterHandler(log.LvlTrace, log.StreamHandler(os.Stderr, log.TerminalFormat(true))))
 	// fmt.Println(tt.dump(true))
-
-	if scheme == customrawdb.FirewoodScheme && snapshots {
-		t.Skip("Firewood scheme does not support snapshots")
-	}
 
 	// Create a temporary persistent database
 	datadir := t.TempDir()
@@ -557,7 +552,6 @@ func testRepairWithScheme(t *testing.T, tt *rewindTest, snapshots bool, scheme s
 			SnapshotLimit:             0, // Disable snapshot by default
 			StateHistory:              32,
 			StateScheme:               scheme,
-			ChainDataDir:              datadir,
 		}
 	)
 	defer engine.Close()

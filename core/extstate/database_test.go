@@ -14,13 +14,11 @@ import (
 	"github.com/ava-labs/libevm/core/state"
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/libevm/stateconf"
 	"github.com/ava-labs/libevm/trie/trienode"
 	"github.com/ava-labs/libevm/triedb"
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/subnet-evm/triedb/firewood"
 	"github.com/ava-labs/subnet-evm/triedb/hashdb"
 )
 
@@ -80,34 +78,12 @@ func newFuzzState(t *testing.T) *fuzzState {
 		r.NoError(hashState.TrieDB().Close())
 	})
 
-	firewoodMemdb := rawdb.NewMemoryDatabase()
-	fwCfg := firewood.Defaults       // copy the defaults
-	fwCfg.ChainDataDir = t.TempDir() // Use a temporary directory for the Firewood
-	firewoodState := NewDatabaseWithConfig(
-		firewoodMemdb,
-		&triedb.Config{
-			DBOverride: fwCfg.BackendConstructor,
-		},
-	)
-	fwTr, err := firewoodState.OpenTrie(ethRoot)
-	r.NoError(err)
-	t.Cleanup(func() {
-		r.NoError(firewoodState.TrieDB().Close())
-	})
-
 	return &fuzzState{
 		merkleTries: []*merkleTrie{
 			{
 				name:             "hash",
 				ethDatabase:      hashState,
 				accountTrie:      hashTr,
-				openStorageTries: make(map[common.Address]state.Trie),
-				lastRoot:         ethRoot,
-			},
-			{
-				name:             "firewood",
-				ethDatabase:      firewoodState,
-				accountTrie:      fwTr,
 				openStorageTries: make(map[common.Address]state.Trie),
 				lastRoot:         ethRoot,
 			},
@@ -148,11 +124,7 @@ func (fs *fuzzState) commit() {
 		}
 
 		// HashDB/PathDB only allows updating the triedb if there have been changes.
-		if _, ok := tr.ethDatabase.TrieDB().Backend().(*firewood.Database); ok {
-			triedbopt := stateconf.WithTrieDBUpdatePayload(common.Hash{byte(int64(fs.blockNumber - 1))}, common.Hash{byte(int64(fs.blockNumber))})
-			fs.require.NoError(tr.ethDatabase.TrieDB().Update(updatedRoot, tr.lastRoot, fs.blockNumber, mergedNodeSet, nil, triedbopt), "failed to update triedb in %s", tr.name)
-			tr.lastRoot = updatedRoot
-		} else if updatedRoot != tr.lastRoot {
+		if updatedRoot != tr.lastRoot {
 			fs.require.NoError(tr.ethDatabase.TrieDB().Update(updatedRoot, tr.lastRoot, fs.blockNumber, mergedNodeSet, nil), "failed to update triedb in %s", tr.name)
 			tr.lastRoot = updatedRoot
 		}

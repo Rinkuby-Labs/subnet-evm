@@ -53,7 +53,6 @@ import (
 	"github.com/ava-labs/subnet-evm/core"
 	"github.com/ava-labs/subnet-evm/internal/ethapi"
 	"github.com/ava-labs/subnet-evm/params"
-	"github.com/ava-labs/subnet-evm/plugin/evm/customrawdb"
 	"github.com/ava-labs/subnet-evm/rpc"
 	"golang.org/x/exp/slices"
 )
@@ -97,10 +96,6 @@ func newTestBackend(t *testing.T, n int, gspec *core.Genesis, scheme string, gen
 		CommitInterval:            4096,
 		StateScheme:               scheme,
 		StateHistory:              100, // Sufficient history for testing
-		ChainDataDir:              t.TempDir(),
-	}
-	if scheme == customrawdb.FirewoodScheme {
-		cacheConfig.SnapshotLimit = 0 // Firewood does not support snapshots
 	}
 
 	chain, err := core.NewBlockChain(backend.chaindb, cacheConfig, gspec, backend.engine, vm.Config{}, common.Hash{}, false)

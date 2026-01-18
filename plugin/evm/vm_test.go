@@ -54,7 +54,6 @@ import (
 	"github.com/ava-labs/subnet-evm/params/paramstest"
 	"github.com/ava-labs/subnet-evm/plugin/evm/config"
 	"github.com/ava-labs/subnet-evm/plugin/evm/customheader"
-	"github.com/ava-labs/subnet-evm/plugin/evm/customrawdb"
 	"github.com/ava-labs/subnet-evm/plugin/evm/customtypes"
 	"github.com/ava-labs/subnet-evm/plugin/evm/extension"
 	"github.com/ava-labs/subnet-evm/plugin/evm/vmerrors"
@@ -81,7 +80,7 @@ func TestMain(m *testing.M) {
 }
 
 var (
-	schemes = []string{rawdb.HashScheme, customrawdb.FirewoodScheme}
+	schemes = []string{rawdb.HashScheme}
 
 	testNetworkID uint32 = avagoconstants.UnitTestID
 
@@ -207,17 +206,9 @@ func newVM(t *testing.T, config testVMConfig) *testVM {
 	}
 }
 
-// Firewood cannot yet be run with an empty config.
+// getConfig builds config JSON string
 func getConfig(scheme, otherConfig string) string {
-	innerConfig := otherConfig
-	if scheme == customrawdb.FirewoodScheme {
-		if len(innerConfig) > 0 {
-			innerConfig += ", "
-		}
-		innerConfig += fmt.Sprintf(`"state-scheme": "%s", "snapshot-cache": 0, "pruning-enabled": true, "state-sync-enabled": false, "metrics-expensive-enabled": false`, customrawdb.FirewoodScheme)
-	}
-
-	return fmt.Sprintf(`{%s}`, innerConfig)
+	return fmt.Sprintf(`{%s}`, otherConfig)
 }
 
 // setupGenesis sets up the genesis

@@ -44,7 +44,6 @@ import (
 	"github.com/ava-labs/subnet-evm/core"
 	"github.com/ava-labs/subnet-evm/core/extstate"
 	"github.com/ava-labs/subnet-evm/eth/tracers"
-	"github.com/ava-labs/subnet-evm/plugin/evm/customrawdb"
 )
 
 // noopReleaser is returned in case there is no operation expected
@@ -226,10 +225,8 @@ func (eth *Ethereum) pathState(block *types.Block) (*state.StateDB, func(), erro
 //     provided, it would be preferable to start from a fresh state, if we have it
 //     on disk.
 func (eth *Ethereum) stateAtBlock(ctx context.Context, block *types.Block, reexec uint64, base *state.StateDB, readOnly bool, preferDisk bool) (statedb *state.StateDB, release tracers.StateReleaseFunc, err error) {
-	isFirewood := eth.blockchain.CacheConfig().StateScheme == customrawdb.FirewoodScheme
-
 	// Use `hashState` if the state can be recomputed from the live database.
-	if eth.blockchain.TrieDB().Scheme() == rawdb.HashScheme && !isFirewood {
+	if eth.blockchain.TrieDB().Scheme() == rawdb.HashScheme {
 		return eth.hashState(ctx, block, reexec, base, readOnly, preferDisk)
 	}
 	return eth.pathState(block)

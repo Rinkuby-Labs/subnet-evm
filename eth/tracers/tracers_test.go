@@ -39,12 +39,11 @@ import (
 	"github.com/ava-labs/libevm/eth/tracers/logger"
 	"github.com/ava-labs/subnet-evm/core"
 	"github.com/ava-labs/subnet-evm/params"
-	"github.com/ava-labs/subnet-evm/plugin/evm/customrawdb"
 	"github.com/ava-labs/subnet-evm/tests"
 )
 
 func BenchmarkPrestateTracer(b *testing.B) {
-	for _, scheme := range []string{rawdb.HashScheme, customrawdb.FirewoodScheme} {
+	for _, scheme := range []string{rawdb.HashScheme} {
 		b.Run(scheme, func(b *testing.B) {
 			benchmarkTransactionTrace(b, scheme)
 		})
