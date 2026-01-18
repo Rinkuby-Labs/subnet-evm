@@ -35,17 +35,17 @@ import (
 	"fmt"
 	"math/big"
 
+	"github.com/Rinkuby-Labs/subnet-evm/accounts/abi/bind"
+	"github.com/Rinkuby-Labs/subnet-evm/interfaces"
+	"github.com/Rinkuby-Labs/subnet-evm/params"
+	"github.com/Rinkuby-Labs/subnet-evm/rpc"
 	ethereum "github.com/ava-labs/libevm"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/common/hexutil"
 	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/subnet-evm/accounts/abi/bind"
-	"github.com/ava-labs/subnet-evm/interfaces"
-	"github.com/ava-labs/subnet-evm/params"
-	"github.com/ava-labs/subnet-evm/rpc"
 
 	// Force-load precompiles to trigger registration
-	_ "github.com/ava-labs/subnet-evm/precompile/registry"
+	_ "github.com/Rinkuby-Labs/subnet-evm/precompile/registry"
 )
 
 // Verify that Client implements required interfaces

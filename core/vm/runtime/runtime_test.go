@@ -34,6 +34,11 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/Rinkuby-Labs/subnet-evm/accounts/abi"
+	"github.com/Rinkuby-Labs/subnet-evm/consensus"
+	"github.com/Rinkuby-Labs/subnet-evm/core"
+	"github.com/Rinkuby-Labs/subnet-evm/eth/tracers"
+	"github.com/Rinkuby-Labs/subnet-evm/params"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/asm"
 	"github.com/ava-labs/libevm/core/rawdb"
@@ -41,11 +46,6 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/ava-labs/libevm/core/vm"
 	"github.com/ava-labs/libevm/eth/tracers/logger"
-	"github.com/ava-labs/subnet-evm/accounts/abi"
-	"github.com/ava-labs/subnet-evm/consensus"
-	"github.com/ava-labs/subnet-evm/core"
-	"github.com/ava-labs/subnet-evm/eth/tracers"
-	"github.com/ava-labs/subnet-evm/params"
 
 	// force-load js tracers to trigger registration
 	_ "github.com/ava-labs/libevm/eth/tracers/js"

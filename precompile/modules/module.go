@@ -8,7 +8,7 @@ import (
 
 	"github.com/ava-labs/libevm/common"
 
-	"github.com/ava-labs/subnet-evm/precompile/contract"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contract"
 )
 
 type Module struct {

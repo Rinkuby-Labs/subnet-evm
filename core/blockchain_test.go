@@ -42,12 +42,12 @@ import (
 	"github.com/ava-labs/libevm/eth/tracers/logger"
 	"github.com/ava-labs/libevm/ethdb"
 
-	"github.com/ava-labs/subnet-evm/consensus/dummy"
-	"github.com/ava-labs/subnet-evm/core/state/pruner"
-	"github.com/ava-labs/subnet-evm/params"
-	"github.com/ava-labs/subnet-evm/params/extras"
-	"github.com/ava-labs/subnet-evm/plugin/evm/customrawdb"
-	"github.com/ava-labs/subnet-evm/plugin/evm/upgrade/legacy"
+	"github.com/Rinkuby-Labs/subnet-evm/consensus/dummy"
+	"github.com/Rinkuby-Labs/subnet-evm/core/state/pruner"
+	"github.com/Rinkuby-Labs/subnet-evm/params"
+	"github.com/Rinkuby-Labs/subnet-evm/params/extras"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/customrawdb"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/upgrade/legacy"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

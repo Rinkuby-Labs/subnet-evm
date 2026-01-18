@@ -12,18 +12,18 @@ import (
 	"github.com/ava-labs/libevm/crypto"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/subnet-evm/accounts/abi/bind"
-	"github.com/ava-labs/subnet-evm/core"
-	"github.com/ava-labs/subnet-evm/params"
-	"github.com/ava-labs/subnet-evm/plugin/evm/customtypes"
-	"github.com/ava-labs/subnet-evm/precompile/allowlist"
-	"github.com/ava-labs/subnet-evm/precompile/allowlist/allowlisttest"
-	"github.com/ava-labs/subnet-evm/precompile/contracts/nativeminter"
-	"github.com/ava-labs/subnet-evm/precompile/contracts/testutils"
-	"github.com/ava-labs/subnet-evm/utils"
+	"github.com/Rinkuby-Labs/subnet-evm/accounts/abi/bind"
+	"github.com/Rinkuby-Labs/subnet-evm/core"
+	"github.com/Rinkuby-Labs/subnet-evm/params"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/customtypes"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/allowlist"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/allowlist/allowlisttest"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contracts/nativeminter"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contracts/testutils"
+	"github.com/Rinkuby-Labs/subnet-evm/utils"
 
-	sim "github.com/ava-labs/subnet-evm/ethclient/simulated"
-	nativeminterbindings "github.com/ava-labs/subnet-evm/precompile/contracts/nativeminter/nativemintertest/bindings"
+	sim "github.com/Rinkuby-Labs/subnet-evm/ethclient/simulated"
+	nativeminterbindings "github.com/Rinkuby-Labs/subnet-evm/precompile/contracts/nativeminter/nativemintertest/bindings"
 )
 
 var (

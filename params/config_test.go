@@ -35,13 +35,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Rinkuby-Labs/subnet-evm/params/extras"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contracts/nativeminter"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contracts/rewardmanager"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contracts/txallowlist"
+	"github.com/Rinkuby-Labs/subnet-evm/utils"
 	"github.com/ava-labs/libevm/common"
 	ethparams "github.com/ava-labs/libevm/params"
-	"github.com/ava-labs/subnet-evm/params/extras"
-	"github.com/ava-labs/subnet-evm/precompile/contracts/nativeminter"
-	"github.com/ava-labs/subnet-evm/precompile/contracts/rewardmanager"
-	"github.com/ava-labs/subnet-evm/precompile/contracts/txallowlist"
-	"github.com/ava-labs/subnet-evm/utils"
 	"github.com/stretchr/testify/require"
 )
 

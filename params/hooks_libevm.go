@@ -17,12 +17,12 @@ import (
 	"github.com/ava-labs/libevm/libevm"
 	"github.com/ava-labs/libevm/libevm/legacy"
 
-	"github.com/ava-labs/subnet-evm/params/extras"
-	"github.com/ava-labs/subnet-evm/plugin/evm/customheader"
-	"github.com/ava-labs/subnet-evm/precompile/contract"
-	"github.com/ava-labs/subnet-evm/precompile/contracts/deployerallowlist"
-	"github.com/ava-labs/subnet-evm/precompile/modules"
-	"github.com/ava-labs/subnet-evm/precompile/precompileconfig"
+	"github.com/Rinkuby-Labs/subnet-evm/params/extras"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/customheader"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contract"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contracts/deployerallowlist"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/modules"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/precompileconfig"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

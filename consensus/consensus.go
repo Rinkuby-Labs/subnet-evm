@@ -31,11 +31,11 @@ package consensus
 import (
 	"math/big"
 
+	"github.com/Rinkuby-Labs/subnet-evm/commontype"
+	"github.com/Rinkuby-Labs/subnet-evm/params"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/state"
 	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/subnet-evm/commontype"
-	"github.com/ava-labs/subnet-evm/params"
 )
 
 // ChainHeaderReader defines a small collection of methods needed to access the local

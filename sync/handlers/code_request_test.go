@@ -14,8 +14,8 @@ import (
 	"github.com/ava-labs/libevm/ethdb/memorydb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/subnet-evm/plugin/evm/message"
-	"github.com/ava-labs/subnet-evm/sync/handlers/stats/statstest"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/message"
+	"github.com/Rinkuby-Labs/subnet-evm/sync/handlers/stats/statstest"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

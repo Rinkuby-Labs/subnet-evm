@@ -12,9 +12,9 @@ import (
 	"github.com/ava-labs/libevm/common/math"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/subnet-evm/accounts/abi"
-	"github.com/ava-labs/subnet-evm/commontype"
-	"github.com/ava-labs/subnet-evm/precompile/contract"
+	"github.com/Rinkuby-Labs/subnet-evm/accounts/abi"
+	"github.com/Rinkuby-Labs/subnet-evm/commontype"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contract"
 )
 
 var (

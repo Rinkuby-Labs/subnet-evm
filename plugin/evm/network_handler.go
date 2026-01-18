@@ -12,10 +12,10 @@ import (
 	"github.com/ava-labs/libevm/log"
 	"github.com/ava-labs/libevm/triedb"
 
-	"github.com/ava-labs/subnet-evm/plugin/evm/message"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/message"
 
-	syncHandlers "github.com/ava-labs/subnet-evm/sync/handlers"
-	syncStats "github.com/ava-labs/subnet-evm/sync/handlers/stats"
+	syncHandlers "github.com/Rinkuby-Labs/subnet-evm/sync/handlers"
+	syncStats "github.com/Rinkuby-Labs/subnet-evm/sync/handlers/stats"
 )
 
 var _ message.RequestHandler = (*networkHandler)(nil)

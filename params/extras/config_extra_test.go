@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/subnet-evm/utils"
+	"github.com/Rinkuby-Labs/subnet-evm/utils"
 )
 
 func TestIsTimestampForked(t *testing.T) {

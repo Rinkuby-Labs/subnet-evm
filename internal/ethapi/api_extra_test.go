@@ -15,11 +15,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/subnet-evm/consensus/dummy"
-	"github.com/ava-labs/subnet-evm/core"
-	"github.com/ava-labs/subnet-evm/params"
-	"github.com/ava-labs/subnet-evm/plugin/evm/customtypes"
-	"github.com/ava-labs/subnet-evm/rpc"
+	"github.com/Rinkuby-Labs/subnet-evm/consensus/dummy"
+	"github.com/Rinkuby-Labs/subnet-evm/core"
+	"github.com/Rinkuby-Labs/subnet-evm/params"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/customtypes"
+	"github.com/Rinkuby-Labs/subnet-evm/rpc"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

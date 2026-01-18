@@ -5,12 +5,12 @@ package ethconfig
 import (
 	"time"
 
+	"github.com/Rinkuby-Labs/subnet-evm/core"
+	"github.com/Rinkuby-Labs/subnet-evm/core/txpool/blobpool"
+	"github.com/Rinkuby-Labs/subnet-evm/core/txpool/legacypool"
+	"github.com/Rinkuby-Labs/subnet-evm/eth/gasprice"
+	"github.com/Rinkuby-Labs/subnet-evm/miner"
 	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/subnet-evm/core"
-	"github.com/ava-labs/subnet-evm/core/txpool/blobpool"
-	"github.com/ava-labs/subnet-evm/core/txpool/legacypool"
-	"github.com/ava-labs/subnet-evm/eth/gasprice"
-	"github.com/ava-labs/subnet-evm/miner"
 )
 
 // MarshalTOML marshals as TOML.

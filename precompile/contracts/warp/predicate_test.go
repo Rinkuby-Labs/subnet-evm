@@ -24,12 +24,12 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/subnet-evm/params/extras"
-	"github.com/ava-labs/subnet-evm/params/extras/extrastest"
-	"github.com/ava-labs/subnet-evm/precompile/precompileconfig"
-	"github.com/ava-labs/subnet-evm/precompile/precompiletest"
-	"github.com/ava-labs/subnet-evm/utils"
-	"github.com/ava-labs/subnet-evm/utils/utilstest"
+	"github.com/Rinkuby-Labs/subnet-evm/params/extras"
+	"github.com/Rinkuby-Labs/subnet-evm/params/extras/extrastest"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/precompileconfig"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/precompiletest"
+	"github.com/Rinkuby-Labs/subnet-evm/utils"
+	"github.com/Rinkuby-Labs/subnet-evm/utils/utilstest"
 
 	agoUtils "github.com/ava-labs/avalanchego/utils"
 	safemath "github.com/ava-labs/avalanchego/utils/math"

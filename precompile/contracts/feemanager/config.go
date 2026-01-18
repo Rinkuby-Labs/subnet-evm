@@ -6,9 +6,9 @@ package feemanager
 import (
 	"github.com/ava-labs/libevm/common"
 
-	"github.com/ava-labs/subnet-evm/commontype"
-	"github.com/ava-labs/subnet-evm/precompile/allowlist"
-	"github.com/ava-labs/subnet-evm/precompile/precompileconfig"
+	"github.com/Rinkuby-Labs/subnet-evm/commontype"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/allowlist"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/precompileconfig"
 )
 
 var _ precompileconfig.Config = (*Config)(nil)

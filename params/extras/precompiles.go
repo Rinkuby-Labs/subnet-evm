@@ -6,8 +6,8 @@ package extras
 import (
 	"encoding/json"
 
-	"github.com/ava-labs/subnet-evm/precompile/modules"
-	"github.com/ava-labs/subnet-evm/precompile/precompileconfig"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/modules"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/precompileconfig"
 )
 
 type Precompiles map[string]precompileconfig.Config

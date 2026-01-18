@@ -7,7 +7,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/ava-labs/subnet-evm/plugin/evm/message"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/message"
 )
 
 var (

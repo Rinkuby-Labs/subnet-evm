@@ -40,7 +40,7 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/ava-labs/libevm/crypto"
 	"github.com/ava-labs/libevm/triedb"
-	"github.com/ava-labs/subnet-evm/core/extstate"
+	"github.com/Rinkuby-Labs/subnet-evm/core/extstate"
 
 	"github.com/davecgh/go-spew/spew"
 	"github.com/holiman/uint256"

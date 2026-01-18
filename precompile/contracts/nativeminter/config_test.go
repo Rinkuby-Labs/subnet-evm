@@ -10,12 +10,12 @@ import (
 	"github.com/ava-labs/libevm/common/math"
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/subnet-evm/precompile/allowlist"
-	"github.com/ava-labs/subnet-evm/precompile/allowlist/allowlisttest"
-	"github.com/ava-labs/subnet-evm/precompile/contracts/nativeminter"
-	"github.com/ava-labs/subnet-evm/precompile/precompileconfig"
-	"github.com/ava-labs/subnet-evm/precompile/precompiletest"
-	"github.com/ava-labs/subnet-evm/utils"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/allowlist"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/allowlist/allowlisttest"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contracts/nativeminter"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/precompileconfig"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/precompiletest"
+	"github.com/Rinkuby-Labs/subnet-evm/utils"
 )
 
 func TestVerify(t *testing.T) {

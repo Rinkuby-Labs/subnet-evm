@@ -34,9 +34,9 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/Rinkuby-Labs/subnet-evm/internal/version"
+	"github.com/Rinkuby-Labs/subnet-evm/params"
 	"github.com/ava-labs/libevm/log"
-	"github.com/ava-labs/subnet-evm/internal/version"
-	"github.com/ava-labs/subnet-evm/params"
 	"github.com/mattn/go-isatty"
 	"github.com/urfave/cli/v2"
 )

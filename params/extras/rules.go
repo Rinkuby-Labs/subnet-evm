@@ -6,7 +6,7 @@ package extras
 import (
 	"github.com/ava-labs/libevm/common"
 
-	"github.com/ava-labs/subnet-evm/precompile/precompileconfig"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/precompileconfig"
 )
 
 type Rules struct {

@@ -17,12 +17,12 @@ import (
 	"github.com/ava-labs/libevm/core/vm"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/subnet-evm/core/extstate"
-	"github.com/ava-labs/subnet-evm/params/extras"
-	"github.com/ava-labs/subnet-evm/params/extras/extrastest"
-	"github.com/ava-labs/subnet-evm/precompile/contract"
-	"github.com/ava-labs/subnet-evm/precompile/precompiletest"
-	"github.com/ava-labs/subnet-evm/utils/utilstest"
+	"github.com/Rinkuby-Labs/subnet-evm/core/extstate"
+	"github.com/Rinkuby-Labs/subnet-evm/params/extras"
+	"github.com/Rinkuby-Labs/subnet-evm/params/extras/extrastest"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contract"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/precompiletest"
+	"github.com/Rinkuby-Labs/subnet-evm/utils/utilstest"
 
 	agoUtils "github.com/ava-labs/avalanchego/utils"
 	avalancheWarp "github.com/ava-labs/avalanchego/vms/platformvm/warp"

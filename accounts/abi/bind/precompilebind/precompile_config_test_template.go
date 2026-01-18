@@ -15,11 +15,11 @@ package {{.Package}}
 import (
 	"testing"
 
-	"github.com/ava-labs/subnet-evm/precompile/precompileconfig"
-	"github.com/ava-labs/subnet-evm/precompile/precompiletest"
-	"github.com/ava-labs/subnet-evm/utils"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/precompileconfig"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/precompiletest"
+	"github.com/Rinkuby-Labs/subnet-evm/utils"
 	{{- if .Contract.AllowList}}
-	"github.com/ava-labs/subnet-evm/precompile/allowlist/allowlisttest"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/allowlist/allowlisttest"
 
 	"github.com/ava-labs/libevm/common"
 	{{- end}}

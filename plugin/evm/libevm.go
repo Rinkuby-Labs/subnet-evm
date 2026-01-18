@@ -6,9 +6,9 @@ package evm
 import (
 	"github.com/ava-labs/libevm/libevm"
 
-	"github.com/ava-labs/subnet-evm/core"
-	"github.com/ava-labs/subnet-evm/params"
-	"github.com/ava-labs/subnet-evm/plugin/evm/customtypes"
+	"github.com/Rinkuby-Labs/subnet-evm/core"
+	"github.com/Rinkuby-Labs/subnet-evm/params"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/customtypes"
 )
 
 // RegisterAllLibEVMExtras is a convenience wrapper for calling

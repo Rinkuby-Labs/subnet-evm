@@ -17,10 +17,10 @@ import (
 	"github.com/ava-labs/libevm/log"
 	"github.com/ava-labs/libevm/trie"
 
-	"github.com/ava-labs/subnet-evm/plugin/evm/customrawdb"
-	"github.com/ava-labs/subnet-evm/utils"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/customrawdb"
+	"github.com/Rinkuby-Labs/subnet-evm/utils"
 
-	syncclient "github.com/ava-labs/subnet-evm/sync/client"
+	syncclient "github.com/Rinkuby-Labs/subnet-evm/sync/client"
 )
 
 var (

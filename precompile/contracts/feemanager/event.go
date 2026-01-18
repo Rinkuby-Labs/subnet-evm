@@ -10,9 +10,9 @@ package feemanager
 import (
 	"math/big"
 
+	"github.com/Rinkuby-Labs/subnet-evm/commontype"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contract"
 	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/subnet-evm/commontype"
-	"github.com/ava-labs/subnet-evm/precompile/contract"
 )
 
 // FeeConfigChangedEventGasCost is the gas cost of a FeeConfigChanged event.

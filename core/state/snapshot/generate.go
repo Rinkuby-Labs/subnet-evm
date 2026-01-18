@@ -32,6 +32,8 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/customrawdb"
+	"github.com/Rinkuby-Labs/subnet-evm/utils"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/types"
@@ -40,8 +42,6 @@ import (
 	"github.com/ava-labs/libevm/rlp"
 	"github.com/ava-labs/libevm/trie"
 	"github.com/ava-labs/libevm/triedb"
-	"github.com/ava-labs/subnet-evm/plugin/evm/customrawdb"
-	"github.com/ava-labs/subnet-evm/utils"
 )
 
 const (

@@ -6,8 +6,8 @@ package deployerallowlist
 import (
 	"github.com/ava-labs/libevm/common"
 
-	"github.com/ava-labs/subnet-evm/precompile/allowlist"
-	"github.com/ava-labs/subnet-evm/precompile/contract"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/allowlist"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contract"
 )
 
 // Singleton StatefulPrecompiledContract for W/R access to the contract deployer allow list.

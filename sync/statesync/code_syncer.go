@@ -15,10 +15,10 @@ import (
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/ethdb"
 
-	"github.com/ava-labs/subnet-evm/plugin/evm/customrawdb"
-	"github.com/ava-labs/subnet-evm/plugin/evm/message"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/customrawdb"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/message"
 
-	statesyncclient "github.com/ava-labs/subnet-evm/sync/client"
+	statesyncclient "github.com/Rinkuby-Labs/subnet-evm/sync/client"
 )
 
 const (

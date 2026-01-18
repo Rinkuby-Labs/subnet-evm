@@ -31,7 +31,7 @@ import (
 	"fmt"
 
 	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/subnet-evm/core/vm/runtime"
+	"github.com/Rinkuby-Labs/subnet-evm/core/vm/runtime"
 )
 
 func ExampleExecute() {

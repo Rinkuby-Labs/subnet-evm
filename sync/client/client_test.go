@@ -19,17 +19,17 @@ import (
 	"github.com/ava-labs/libevm/triedb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/subnet-evm/consensus/dummy"
-	"github.com/ava-labs/subnet-evm/core"
-	"github.com/ava-labs/subnet-evm/params"
-	"github.com/ava-labs/subnet-evm/plugin/evm/customtypes"
-	"github.com/ava-labs/subnet-evm/plugin/evm/message"
-	"github.com/ava-labs/subnet-evm/sync/handlers"
-	"github.com/ava-labs/subnet-evm/sync/statesync/statesynctest"
+	"github.com/Rinkuby-Labs/subnet-evm/consensus/dummy"
+	"github.com/Rinkuby-Labs/subnet-evm/core"
+	"github.com/Rinkuby-Labs/subnet-evm/params"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/customtypes"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/message"
+	"github.com/Rinkuby-Labs/subnet-evm/sync/handlers"
+	"github.com/Rinkuby-Labs/subnet-evm/sync/statesync/statesynctest"
 
+	clientstats "github.com/Rinkuby-Labs/subnet-evm/sync/client/stats"
+	handlerstats "github.com/Rinkuby-Labs/subnet-evm/sync/handlers/stats"
 	ethparams "github.com/ava-labs/libevm/params"
-	clientstats "github.com/ava-labs/subnet-evm/sync/client/stats"
-	handlerstats "github.com/ava-labs/subnet-evm/sync/handlers/stats"
 )
 
 func TestMain(m *testing.M) {

@@ -11,15 +11,15 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/subnet-evm/commontype"
-	"github.com/ava-labs/subnet-evm/precompile/allowlist"
-	"github.com/ava-labs/subnet-evm/precompile/contracts/deployerallowlist"
-	"github.com/ava-labs/subnet-evm/precompile/contracts/feemanager"
-	"github.com/ava-labs/subnet-evm/precompile/contracts/nativeminter"
-	"github.com/ava-labs/subnet-evm/precompile/contracts/rewardmanager"
-	"github.com/ava-labs/subnet-evm/precompile/contracts/txallowlist"
-	"github.com/ava-labs/subnet-evm/utils"
-	"github.com/ava-labs/subnet-evm/utils/utilstest"
+	"github.com/Rinkuby-Labs/subnet-evm/commontype"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/allowlist"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contracts/deployerallowlist"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contracts/feemanager"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contracts/nativeminter"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contracts/rewardmanager"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contracts/txallowlist"
+	"github.com/Rinkuby-Labs/subnet-evm/utils"
+	"github.com/Rinkuby-Labs/subnet-evm/utils/utilstest"
 )
 
 func TestVerifyWithChainConfig(t *testing.T) {

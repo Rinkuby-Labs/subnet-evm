@@ -34,10 +34,10 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/Rinkuby-Labs/subnet-evm/params"
+	"github.com/Rinkuby-Labs/subnet-evm/params/extras"
+	"github.com/Rinkuby-Labs/subnet-evm/utils"
 	"github.com/ava-labs/libevm/libevm"
-	"github.com/ava-labs/subnet-evm/params"
-	"github.com/ava-labs/subnet-evm/params/extras"
-	"github.com/ava-labs/subnet-evm/utils"
 )
 
 // Forks table defines supported forks and their chain config.

@@ -10,8 +10,8 @@ import (
 
 	"github.com/ava-labs/avalanchego/upgrade"
 
-	"github.com/ava-labs/subnet-evm/params/extras"
-	"github.com/ava-labs/subnet-evm/utils"
+	"github.com/Rinkuby-Labs/subnet-evm/params/extras"
+	"github.com/Rinkuby-Labs/subnet-evm/utils"
 )
 
 const (

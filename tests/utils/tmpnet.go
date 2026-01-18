@@ -11,7 +11,7 @@ import (
 	"github.com/ava-labs/avalanchego/ids"
 	"github.com/ava-labs/avalanchego/tests/fixture/tmpnet"
 
-	"github.com/ava-labs/subnet-evm/plugin/evm"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm"
 )
 
 var DefaultChainConfig = map[string]any{

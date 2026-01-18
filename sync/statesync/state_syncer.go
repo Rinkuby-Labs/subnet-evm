@@ -14,9 +14,9 @@ import (
 	"github.com/ava-labs/libevm/triedb"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/ava-labs/subnet-evm/core/state/snapshot"
+	"github.com/Rinkuby-Labs/subnet-evm/core/state/snapshot"
 
-	syncclient "github.com/ava-labs/subnet-evm/sync/client"
+	syncclient "github.com/Rinkuby-Labs/subnet-evm/sync/client"
 )
 
 const (

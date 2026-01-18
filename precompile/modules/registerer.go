@@ -10,8 +10,8 @@ import (
 
 	"github.com/ava-labs/libevm/common"
 
-	"github.com/ava-labs/subnet-evm/constants"
-	"github.com/ava-labs/subnet-evm/utils"
+	"github.com/Rinkuby-Labs/subnet-evm/constants"
+	"github.com/Rinkuby-Labs/subnet-evm/utils"
 )
 
 var (

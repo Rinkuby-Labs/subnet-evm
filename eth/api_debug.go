@@ -43,8 +43,8 @@ import (
 	"github.com/ava-labs/libevm/rlp"
 	"github.com/ava-labs/libevm/trie"
 
-	"github.com/ava-labs/subnet-evm/internal/ethapi"
-	"github.com/ava-labs/subnet-evm/rpc"
+	"github.com/Rinkuby-Labs/subnet-evm/internal/ethapi"
+	"github.com/Rinkuby-Labs/subnet-evm/rpc"
 )
 
 // DebugAPI is the collection of Ethereum full node APIs for debugging the

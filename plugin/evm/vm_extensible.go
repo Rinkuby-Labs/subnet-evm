@@ -12,12 +12,12 @@ import (
 	"github.com/ava-labs/avalanchego/network/p2p"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/ava-labs/subnet-evm/core"
-	"github.com/ava-labs/subnet-evm/params"
-	"github.com/ava-labs/subnet-evm/plugin/evm/config"
-	"github.com/ava-labs/subnet-evm/plugin/evm/extension"
+	"github.com/Rinkuby-Labs/subnet-evm/core"
+	"github.com/Rinkuby-Labs/subnet-evm/params"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/config"
+	"github.com/Rinkuby-Labs/subnet-evm/plugin/evm/extension"
 
-	vmsync "github.com/ava-labs/subnet-evm/plugin/evm/sync"
+	vmsync "github.com/Rinkuby-Labs/subnet-evm/plugin/evm/sync"
 )
 
 var _ extension.InnerVM = (*VM)(nil)

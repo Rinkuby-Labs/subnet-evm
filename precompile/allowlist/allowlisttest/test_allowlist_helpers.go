@@ -11,11 +11,11 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/subnet-evm/accounts/abi/bind"
-	"github.com/ava-labs/subnet-evm/precompile/allowlist"
-	"github.com/ava-labs/subnet-evm/precompile/contracts/testutils"
+	"github.com/Rinkuby-Labs/subnet-evm/accounts/abi/bind"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/allowlist"
+	"github.com/Rinkuby-Labs/subnet-evm/precompile/contracts/testutils"
 
-	sim "github.com/ava-labs/subnet-evm/ethclient/simulated"
+	sim "github.com/Rinkuby-Labs/subnet-evm/ethclient/simulated"
 )
 
 // All precompiles that use the AllowList pattern extend IAllowList in Solidity, so their Go bindings
